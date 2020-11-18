@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCreer = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnModifier = new System.Windows.Forms.Button();
@@ -37,7 +37,7 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblRows = new System.Windows.Forms.Label();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,15 +59,15 @@
             this.btnCreer.Text = "Creer";
             this.btnCreer.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblSearch
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(831, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Search";
+            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(831, 27);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(41, 13);
+            this.lblSearch.TabIndex = 1;
+            this.lblSearch.Text = "Search";
             // 
             // txtSearch
             // 
@@ -158,15 +158,15 @@
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lblRows
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(838, 411);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Rows";
+            this.lblRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRows.AutoSize = true;
+            this.lblRows.Location = new System.Drawing.Point(838, 411);
+            this.lblRows.Name = "lblRows";
+            this.lblRows.Size = new System.Drawing.Size(34, 13);
+            this.lblRows.TabIndex = 9;
+            this.lblRows.Text = "Rows";
             // 
             // Nom
             // 
@@ -209,7 +209,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(884, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblRows);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRefresh);
@@ -217,7 +217,7 @@
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.btnCreer);
             this.Name = "FrmEtudiantEdit";
             this.Text = "Carte etudiant";
@@ -230,7 +230,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCreer;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
@@ -245,7 +245,7 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSupprimer;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblRows;
     }
 }
 
