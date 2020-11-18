@@ -1,0 +1,10 @@
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.WinForms.exe.config
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.WinForms.exe
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.WinForms.pdb
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.csprojAssemblyReference.cache
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmEtudiantEdit.resources
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.Properties.Resources.resources
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.csproj.GenerateResource.cache
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.csproj.CoreCompileInputs.cache
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.exe
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.pdb
