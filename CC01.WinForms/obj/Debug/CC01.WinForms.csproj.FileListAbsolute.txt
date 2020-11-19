@@ -100,3 +100,5 @@ D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinFor
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\RdlCompile.cache
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\RdlCompile.compiled
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.csproj.CopyComplete
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmPreview.resources
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmParent.resources
