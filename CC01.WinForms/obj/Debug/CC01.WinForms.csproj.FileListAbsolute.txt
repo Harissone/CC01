@@ -103,3 +103,7 @@ D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinFor
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmPreview.resources
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmParent.resources
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmUser.resources
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.BO.dll
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.BO.pdb
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmCreateEtudiant.resources
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmCreateSchool.resources

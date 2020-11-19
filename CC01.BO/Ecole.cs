@@ -14,19 +14,22 @@ namespace CC01.BO
         public string Contact { get; set; }
         public string Email { get; set; }
 
+        public string Logo { get; set; }
+
         public Ecole()
         {
 
         }
 
         public Ecole(string nomEcole, string localisation, string boitePostale, 
-                 string contact, string email)
+                 string contact, string email, string logo)
         {
             NomEcole = nomEcole;
             Localisation = localisation;
             BoitePostale = boitePostale;
             Contact = contact;
             Email = email;
+            Logo = logo;
         }
     }
 

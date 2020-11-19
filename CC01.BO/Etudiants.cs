@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CC01.BO
 {
+    [Serializable]
     public class Etudiants
     {
         public string Nom { get; set; }
@@ -32,5 +33,18 @@ namespace CC01.BO
             Contact = contact;
             Email = email;
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Etudiants etudiants &&
+                   Identifiant == etudiants.Identifiant;
+        }
+
+        public override int GetHashCode()
+        {
+            return 574969646 + EqualityComparer<string>.Default.GetHashCode(Identifiant);
+        }
+
+
     }
 }
