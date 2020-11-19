@@ -8,5 +8,11 @@ namespace CC01.DAL
 {
     class EcoleDAO
     {
+        private string dbFolder;
+
+        public EcoleDAO(string dbFolder)
+        {
+            this.dbFolder = dbFolder;
+        }
     }
 }

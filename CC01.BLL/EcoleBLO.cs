@@ -11,12 +11,12 @@ namespace CC01.BLL
 {
     class EcoleBLO
     {
-        private EcoleDAO ecoleRepo;
+        private EcoleBLO ecoleRepo;
         private string dbFolder;
         public EcoleBLO(string dbFolder)
         {
             this.dbFolder = dbFolder;
-            ecoleRepo = new EcoleDAO(dbFolder);
+            ecoleRepo = new EcoleBLO(dbFolder);
         }
 
         public void CreateEcole(Ecole oldEcole, Ecole newEcole)
@@ -40,16 +40,24 @@ namespace CC01.BLL
                 File.Delete(oldEcole.Logo);
         }
 
-        public Etudiants GetEtudiant()
+        private void Add(Ecole newEcole)
         {
-            Etudiants etudiants = ecoleRepo.Get();
-            if (Etudiants != null)
-                if (!string.IsNullOrEmpty(etudiants.Logo))
-                    etudiants.Logo = Path.Combine(dbFolder, "logo", company.Logo);
-            return etudiants;
+            
         }
 
+        public Ecole GetEtudiant()
+        {
+            Ecole ecole = ecoleRepo.Get();
+            if (ecole != null)
+                if (!string.IsNullOrEmpty(ecole.Logo))
+                    ecole.Logo = Path.Combine(dbFolder, "logo", ecole.Logo);
+            return ecole;
+        }
 
+        private Ecole Get()
+        {
+            
+        }
     }
 
 
