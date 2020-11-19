@@ -32,7 +32,6 @@
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnImprimer = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -86,23 +85,12 @@
             // btnRefresh
             // 
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(12, 253);
+            this.btnRefresh.Location = new System.Drawing.Point(12, 211);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(106, 31);
             this.btnRefresh.TabIndex = 14;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimer
-            // 
-            this.btnImprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImprimer.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnImprimer.Location = new System.Drawing.Point(12, 207);
-            this.btnImprimer.Name = "btnImprimer";
-            this.btnImprimer.Size = new System.Drawing.Size(106, 31);
-            this.btnImprimer.TabIndex = 13;
-            this.btnImprimer.Text = "Imprimer";
-            this.btnImprimer.UseVisualStyleBackColor = true;
             // 
             // btnModifier
             // 
@@ -221,7 +209,6 @@
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnImprimer);
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtSearch);
@@ -242,7 +229,6 @@
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnImprimer;
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtSearch;

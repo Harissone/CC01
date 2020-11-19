@@ -63,7 +63,7 @@
             // 
             this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(831, 27);
+            this.lblSearch.Location = new System.Drawing.Point(891, 27);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(41, 13);
             this.lblSearch.TabIndex = 1;
@@ -76,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Location = new System.Drawing.Point(133, 55);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(739, 20);
+            this.txtSearch.Size = new System.Drawing.Size(799, 20);
             this.txtSearch.TabIndex = 4;
             // 
             // dataGridView1
@@ -99,7 +99,7 @@
             this.Column5});
             this.dataGridView1.Location = new System.Drawing.Point(133, 94);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(739, 314);
+            this.dataGridView1.Size = new System.Drawing.Size(799, 325);
             this.dataGridView1.TabIndex = 5;
             // 
             // btnModifier
@@ -139,7 +139,7 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(12, 377);
+            this.btnCancel.Location = new System.Drawing.Point(12, 388);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(106, 31);
             this.btnCancel.TabIndex = 7;
@@ -151,7 +151,7 @@
             this.btnSupprimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSupprimer.ForeColor = System.Drawing.Color.Red;
-            this.btnSupprimer.Location = new System.Drawing.Point(12, 329);
+            this.btnSupprimer.Location = new System.Drawing.Point(12, 340);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(106, 31);
             this.btnSupprimer.TabIndex = 6;
@@ -162,7 +162,7 @@
             // 
             this.lblRows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRows.AutoSize = true;
-            this.lblRows.Location = new System.Drawing.Point(838, 411);
+            this.lblRows.Location = new System.Drawing.Point(898, 422);
             this.lblRows.Name = "lblRows";
             this.lblRows.Size = new System.Drawing.Size(34, 13);
             this.lblRows.TabIndex = 9;
@@ -208,7 +208,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(884, 450);
+            this.ClientSize = new System.Drawing.Size(944, 461);
             this.Controls.Add(this.lblRows);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnCancel);
