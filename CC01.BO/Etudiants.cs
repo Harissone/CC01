@@ -11,7 +11,7 @@ namespace CC01.BO
     {
         public string Nom { get; set; }
         public string Prenom { get; set; }
-        public string DateNaissance { get; set; }
+        public DateTime DateNaissance { get; set; }
         public string LieuxNaissance { get; set; }
         public string Identifiant { get; set; }
         public string Contact { get; set; }
@@ -22,7 +22,7 @@ namespace CC01.BO
                 
         }
 
-        public Etudiants(string nom, string prenom, string dateNaissance, string lieuxNaissance, string identifiant, 
+        public Etudiants(string nom, string prenom, DateTime dateNaissance, string lieuxNaissance, string identifiant, 
                 string contact, string email)
         {
             Nom = nom;

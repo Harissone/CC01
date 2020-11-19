@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmParent));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.etudiantsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ecoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gererToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.etudiantsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ecolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.deconnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ecoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aProposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,12 +67,6 @@
             this.etudiantsToolStripMenuItem.Text = "Fichier";
             this.etudiantsToolStripMenuItem.Click += new System.EventHandler(this.etudiantsToolStripMenuItem_Click);
             // 
-            // ecoleToolStripMenuItem
-            // 
-            this.ecoleToolStripMenuItem.Name = "ecoleToolStripMenuItem";
-            this.ecoleToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.ecoleToolStripMenuItem.Text = "Option";
-            // 
             // gererToolStripMenuItem
             // 
             this.gererToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -88,12 +82,18 @@
             this.etudiantsToolStripMenuItem1.Name = "etudiantsToolStripMenuItem1";
             this.etudiantsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.etudiantsToolStripMenuItem1.Text = "Etudiants";
+            this.etudiantsToolStripMenuItem1.Click += new System.EventHandler(this.etudiantsToolStripMenuItem1_Click);
             // 
             // ecolesToolStripMenuItem
             // 
             this.ecolesToolStripMenuItem.Name = "ecolesToolStripMenuItem";
             this.ecolesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ecolesToolStripMenuItem.Text = "Ecoles";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // deconnectionToolStripMenuItem
             // 
@@ -109,6 +109,12 @@
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             // 
+            // ecoleToolStripMenuItem
+            // 
+            this.ecoleToolStripMenuItem.Name = "ecoleToolStripMenuItem";
+            this.ecoleToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.ecoleToolStripMenuItem.Text = "Option";
+            // 
             // aideToolStripMenuItem
             // 
             this.aideToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -120,13 +126,8 @@
             // aProposToolStripMenuItem
             // 
             this.aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
-            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aProposToolStripMenuItem.Text = "A propos";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // FrmParent
             // 
