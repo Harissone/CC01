@@ -69,6 +69,7 @@
             this.btnSupprimer.TabIndex = 17;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnCancel
             // 
@@ -81,6 +82,7 @@
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnRefresh
             // 
@@ -91,6 +93,7 @@
             this.btnRefresh.TabIndex = 14;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnModifier
             // 
@@ -102,6 +105,7 @@
             this.btnModifier.TabIndex = 11;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // dataGridView1
             // 
@@ -158,6 +162,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(820, 20);
             this.txtSearch.TabIndex = 15;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // lblSearch
             // 
@@ -188,6 +193,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(106, 63);
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblLogo
             // 
@@ -217,6 +223,7 @@
             this.Controls.Add(this.btnCreer);
             this.Name = "FrmEcoleEdit";
             this.Text = "Ecole";
+            this.Load += new System.EventHandler(this.FrmEcoleEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

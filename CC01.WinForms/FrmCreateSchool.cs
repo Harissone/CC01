@@ -16,21 +16,40 @@ namespace CC01.WinForms
 {
     public partial class FrmCreateSchool : Form
     {
+        private Action callBack;
         private EcoleBLO ecoleBLO;
         private Ecole oldEcole;
-        public FrmCreateSchool()
+        private Action loadData;
+
+        public FrmCreateSchool(object loadData)
         {
             InitializeComponent();
-            ecoleBLO = new EcoleBLO(ConfigurationManager.AppSettings["DbFolder"]);
-            oldEcole = ecoleBLO.GetEcole();
-            if (oldEcole != null)
-            {
-                txtEmail.Text = oldEcole.Email;
-                txtNomEcole.Text = oldEcole.NomEcole;
-                txtContact.Text = oldEcole.Contact.ToString();
-                txtBoitePostale.Text = oldEcole.BoitePostale;
-                pictureBox1.ImageLocation = oldEcole.Logo;
-            }
+           
+        }
+
+        public FrmCreateSchool(Action callBack, Action loadData) : this()
+        {
+            this.callBack = callBack;
+            this.loadData = loadData;
+        }
+
+
+
+        public FrmCreateSchool(Action loadData)
+        {
+            this.loadData = loadData;
+        }
+
+        public FrmCreateSchool(Ecole ecole, Action callBack) : this(callBack)
+        {
+            this.oldEcole = ecole;
+            txtNomEcole.Text = ecole.NomEcole;
+            txtContact.Text = ecole.Contact.ToString();
+            txtBoitePostale.Text = ecole.BoitePostale;
+            txtEmail.Text = ecole.Email.ToString();
+        }
+        public FrmCreateSchool()
+        {
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

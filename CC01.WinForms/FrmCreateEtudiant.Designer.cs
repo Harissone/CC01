@@ -226,6 +226,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "FrmCreateEtudiant";
             this.Text = "FrmCreateEtudiant";
+            this.Load += new System.EventHandler(this.FrmCreateEtudiant_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

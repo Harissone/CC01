@@ -40,6 +40,11 @@ namespace CC01.BLL
                 File.Delete(oldEcole.Logo);
         }
 
+        public IEnumerable<Ecole> GetBy(Func<Ecole, bool> predicate)
+        {
+            return ecoleRepo.Find(predicate);
+        }
+
         private void Add(Ecole newEcole)
         {
             
@@ -52,6 +57,10 @@ namespace CC01.BLL
                 if (!string.IsNullOrEmpty(ecole.Logo))
                     ecole.Logo = Path.Combine(dbFolder, "logo", ecole.Logo);
             return ecole;
+        }
+        public void DeleteEcole(Ecole ecole)
+        {
+            ecoleRepo.Remove(ecole);
         }
     }
 

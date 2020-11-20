@@ -79,6 +79,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(799, 20);
             this.txtSearch.TabIndex = 4;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // dataGridView1
             // 
@@ -227,6 +228,7 @@
             this.Controls.Add(this.btnCreer);
             this.Name = "FrmEtudiantEdit";
             this.Text = "Carte etudiant";
+            this.Load += new System.EventHandler(this.FrmEtudiantEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -55,7 +55,7 @@ namespace CC01.WinForms
 
                 Etudiants newProduct = new Etudiants
                 (
-                    txtNom.Text.ToUpper(),
+                    txtNom.Text,
                     txtPrenom.Text,
                     txtContact.Text,
                     txtSexe.Text,
@@ -72,7 +72,7 @@ namespace CC01.WinForms
                 if (this.oldEtudiant == null)
                     productBLO.CreateEtudiant(newProduct);
                 else
-                    productBLO.EditProduct(oldEtudiant, newProduct);
+                    productBLO.EditEtudiants(oldEtudiant, newProduct);
 
                 MessageBox.Show
                 (
@@ -128,7 +128,7 @@ namespace CC01.WinForms
                    MessageBoxIcon.Warning
                );
             }
-            catch (Exception ex)
+           /* catch (Exception ex)
             {
                 ex.WriteToFile();
                 MessageBox.Show
@@ -138,7 +138,7 @@ namespace CC01.WinForms
                    MessageBoxButtons.OK,
                    MessageBoxIcon.Error
                );
-            }
+            }*/
 
         }
 
@@ -149,7 +149,7 @@ namespace CC01.WinForms
             txtNom.BackColor = Color.White;
             if (string.IsNullOrWhiteSpace(txtIdentifiant.Text))
             {
-                text += "- Please enter the reference ! \n";
+                text += "- Please enter the Identifiant ! \n";
                 txtIdentifiant.BackColor = Color.Pink;
             }
             if (string.IsNullOrWhiteSpace(txtNom.Text))
@@ -160,6 +160,11 @@ namespace CC01.WinForms
 
             if (!string.IsNullOrEmpty(text))
                 throw new TypingException(text);
+        }
+
+        private void FrmCreateEtudiant_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

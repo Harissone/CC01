@@ -11,7 +11,7 @@ namespace CC01.DAL
 {
     public  class EcoleDAO
     {
-        
+        private static List<Ecole> ecoles;
         private Ecole ecole;
         private const string FILE_NAME = @"ecole.json";
         private readonly string dbFolder;
@@ -54,6 +54,31 @@ namespace CC01.DAL
         public Ecole Get()
         {
             return ecole;
+        }
+
+        public IEnumerable<Ecole> Find()
+        {
+            return new List<Ecole>(ecoles);
+        }
+
+        public IEnumerable<Ecole> Find(Func<Ecole, bool> predicate)
+        {
+            return new List<Ecole>(ecoles.Where(predicate).ToArray());
+        }
+
+        public void Remove(Ecole ecole)
+        {
+            EcoleDAO.ecoles.Remove(ecole);
+            Save();
+        }
+
+        private void Save()
+        {
+            using (StreamWriter sw = new StreamWriter(file.FullName, false))
+            {
+                string json = JsonConvert.SerializeObject(ecole);
+                sw.WriteLine(json);
+            }
         }
     }
 }

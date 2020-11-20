@@ -19,7 +19,24 @@ namespace CC01.WinForms
 
         private void etudiantsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form f = new FrmCreateEtudiant();
+            f.Show();
         }
+
+        
+
+        private void ecolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form f = new FrmCreateSchool();
+            f.Show();
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        
     }
 }

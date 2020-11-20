@@ -36,9 +36,9 @@ namespace CC01.BLL
             return etudiantRepo.Find(x => x.Identifiant == identifiant);
         }
 
-        public object GetBy(Func<object, bool> p)
+        public IEnumerable<Etudiants> GetBy(Func<Etudiants, bool> predicate)
         {
-            throw new NotImplementedException();
+            return etudiantRepo.Find(predicate);
         }
 
         public void EditEtudiants(Etudiants oldEtudiants, Etudiants newEtudiants)

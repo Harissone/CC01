@@ -17,7 +17,7 @@ namespace CC01.DAL
         private const string FILE_NAME = @"etudiants.json";
         private readonly string dbFolder;
         private FileInfo file;
-        
+        private Etudiants etudiant;
 
         public EtudiantDAO(string dbFolder)
         {
@@ -48,7 +48,7 @@ namespace CC01.DAL
 
         public Etudiants Get()
         {
-           // return etudiants;
+            return etudiant;
         }
 
         public void Set(Etudiants oldEtudiants, Etudiants newEtudiants)

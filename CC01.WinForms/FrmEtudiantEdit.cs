@@ -34,9 +34,9 @@ namespace CC01.WinForms
             var etudiants = etudiantsBLO.GetBy
             (
                 x =>
-                x.Identfiant.ToLower().Contains(value) ||
-                x.Nom.ToLower().Contains(value)
-            ).OrderBy(x => x.Identfiant).ToArray();
+                x.Identifiant.ToLower().Contains(value) ||
+                x.Prenom.ToLower().Contains(value)
+            ).OrderBy(x => x.Identifiant).ToArray();
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = etudiants;
             lblRows.Text = $"{dataGridView1.RowCount} rows";
@@ -109,7 +109,7 @@ namespace CC01.WinForms
                     )
                 );
             }
-            Form f = new FrmPreview("ProductListRpt.rdlc", items);
+            Form f = new FrmPreview("CartePrintRpt.rdlc", items);
             f.Show();
         }
 
@@ -137,6 +137,16 @@ namespace CC01.WinForms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            loadData();
+        }
+
+        private void FrmEtudiantEdit_Load(object sender, EventArgs e)
+        {
+            loadData();
         }
     }
 }

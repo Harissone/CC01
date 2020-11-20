@@ -1,0 +1,32 @@
+20/11/2020 14:07:55
+System.ArgumentNullException: La valeur ne peut pas être null.
+Nom du paramètre : path1
+   à System.IO.Path.Combine(String path1, String path2)
+   à CC01.DAL.EtudiantDAO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.DAL\EtudiantDAO.cs:ligne 25
+   à CC01.BLL.EtudiantBLO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.BLL\EtudiantBLO.cs:ligne 16
+   à CC01.WinForms.FrmCreateEtudiant.btnSave_Click(Object sender, EventArgs e) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\FrmCreateEtudiant.cs:ligne 70
+
+20/11/2020 14:08:01
+System.ArgumentNullException: La valeur ne peut pas être null.
+Nom du paramètre : path1
+   à System.IO.Path.Combine(String path1, String path2)
+   à CC01.DAL.EtudiantDAO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.DAL\EtudiantDAO.cs:ligne 25
+   à CC01.BLL.EtudiantBLO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.BLL\EtudiantBLO.cs:ligne 16
+   à CC01.WinForms.FrmCreateEtudiant.btnSave_Click(Object sender, EventArgs e) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\FrmCreateEtudiant.cs:ligne 70
+
+20/11/2020 14:08:10
+System.ArgumentNullException: La valeur ne peut pas être null.
+Nom du paramètre : path1
+   à System.IO.Path.Combine(String path1, String path2)
+   à CC01.DAL.EtudiantDAO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.DAL\EtudiantDAO.cs:ligne 25
+   à CC01.BLL.EtudiantBLO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.BLL\EtudiantBLO.cs:ligne 16
+   à CC01.WinForms.FrmCreateEtudiant.btnSave_Click(Object sender, EventArgs e) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\FrmCreateEtudiant.cs:ligne 70
+
+20/11/2020 14:28:29
+System.ArgumentNullException: La valeur ne peut pas être null.
+Nom du paramètre : path1
+   à System.IO.Path.Combine(String path1, String path2)
+   à CC01.DAL.EtudiantDAO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.DAL\EtudiantDAO.cs:ligne 25
+   à CC01.BLL.EtudiantBLO..ctor(String dbFolder) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.BLL\EtudiantBLO.cs:ligne 16
+   à CC01.WinForms.FrmCreateEtudiant.btnSave_Click(Object sender, EventArgs e) dans D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\FrmCreateEtudiant.cs:ligne 70
+

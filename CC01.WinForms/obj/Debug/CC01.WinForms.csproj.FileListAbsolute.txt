@@ -107,3 +107,9 @@ D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinFor
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.BO.pdb
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmCreateEtudiant.resources
 D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\obj\Debug\CC01.WinForms.FrmCreateSchool.resources
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.BLL.dll
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.DAL.dll
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\Newtonsoft.Json.dll
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.BLL.pdb
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\CC01.DAL.pdb
+D:\TI PAM 2\Programmation multicouche (Tchana)\Cour Multicouche\CC01\CC01.WinForms\bin\Debug\Newtonsoft.Json.xml
