@@ -19,12 +19,14 @@ namespace CC01.WinForms
 
         private void etudiantsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form f = new FrmEtudiantEdit();
+            f.Show();
         }
 
         private void etudiantsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Form f = new FrmEcoleEdit();
+            f.Show();
         }
     }
 }

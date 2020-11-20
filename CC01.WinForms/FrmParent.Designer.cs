@@ -89,7 +89,6 @@
             this.ecolesToolStripMenuItem.Name = "ecolesToolStripMenuItem";
             this.ecolesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ecolesToolStripMenuItem.Text = "Ecoles";
-            this.ecolesToolStripMenuItem.Click += new System.EventHandler(this.ecolesToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -114,7 +113,6 @@
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
-            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // ecoleToolStripMenuItem
             // 

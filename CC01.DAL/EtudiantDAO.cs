@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 
 namespace CC01.DAL
 {
@@ -22,28 +22,31 @@ namespace CC01.DAL
         public EtudiantDAO(string dbFolder)
         {
             this.dbFolder = dbFolder;
-            file = new FileInfo(Path.Combine(this.dbFolder, FILE_NAME));
-            if (!file.Directory.Exists)
-            {
-                file.Directory.Create();
-            }
-            if (!file.Exists)
-            {
-                file.Create().Close();
-                file.Refresh();
-            }
-            if (file.Length > 0)
-            {
-                using (StreamReader sr = new StreamReader(file.FullName))
+            
+                file = new FileInfo(Path.Combine(this.dbFolder, FILE_NAME));
+                if (!file.Directory.Exists)
                 {
-                    string json = sr.ReadToEnd();
-                    etudiants = JsonConvert.DeserializeObject<List<Etudiants>>(json);
+                    file.Directory.Create();
                 }
-            }
-            if (etudiants == null)
-            {
-                etudiants = new List<Etudiants>();
-            }
+                if (!file.Exists)
+                {
+                    file.Create().Close();
+                    file.Refresh();
+                }
+                if (file.Length > 0)
+                {
+                    using (StreamReader sr = new StreamReader(file.FullName))
+                    {
+                        string json = sr.ReadToEnd();
+                        etudiants = JsonConvert.DeserializeObject<List<Etudiants>>(json);
+                    }
+                }
+                if (etudiants == null)
+                {
+                    etudiants = new List<Etudiants>();
+                }
+           
+            
         }
 
         public Etudiants Get()
