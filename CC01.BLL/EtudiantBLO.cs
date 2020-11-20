@@ -23,10 +23,10 @@ namespace CC01.BLL
 
         public void DeleteEtudiant(Etudiants etudiant)
         {
-            productRepo.Remove(etudiant);
+            etudiantRepo.Remove(etudiant);
         }
 
-        public IEnumerable<Etudiants> GetAllProducts()
+        public IEnumerable<Etudiants> GetAllEtudiant()
         {
             return etudiantRepo.Find();
         }
@@ -36,9 +36,23 @@ namespace CC01.BLL
             return etudiantRepo.Find(x => x.Identifiant == identifiant);
         }
 
-        public void EditProduct(Etudiants oldEtudiants, Etudiants newEtudiants)
+        public object GetBy(Func<object, bool> p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EditEtudiants(Etudiants oldEtudiants, Etudiants newEtudiants)
         {
             etudiantRepo.Set(oldEtudiants, newEtudiants);
+        }
+
+        public Etudiants GetEtudiant()
+        {
+            Etudiants company = etudiantRepo.Get();
+           /* if (company != null)
+                if (!string.IsNullOrEmpty(company.Logo))
+                    company.Logo = Path.Combine(dbFolder, "logo", company.Logo);*/
+            return company;
         }
     }
 }

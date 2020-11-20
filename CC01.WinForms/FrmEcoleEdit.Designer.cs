@@ -34,16 +34,16 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.btnCreer = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblLogo = new System.Windows.Forms.Label();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.btnCreer = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblLogo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,6 +124,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(820, 358);
             this.dataGridView1.TabIndex = 16;
             // 
+            // Nom
+            // 
+            this.Nom.HeaderText = "Nom Ecole";
+            this.Nom.Name = "Nom";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Localisation";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Boite Postale";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Contact";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Email";
+            this.Column5.Name = "Column5";
+            // 
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -154,6 +179,7 @@
             this.btnCreer.TabIndex = 10;
             this.btnCreer.Text = "Creer";
             this.btnCreer.UseVisualStyleBackColor = true;
+            this.btnCreer.Click += new System.EventHandler(this.btnCreer_Click);
             // 
             // pictureBox1
             // 
@@ -172,31 +198,6 @@
             this.lblLogo.Size = new System.Drawing.Size(31, 13);
             this.lblLogo.TabIndex = 21;
             this.lblLogo.Text = "Logo";
-            // 
-            // Nom
-            // 
-            this.Nom.HeaderText = "Nom Ecole";
-            this.Nom.Name = "Nom";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Localisation";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Boite Postale";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Contact";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Email";
-            this.Column5.Name = "Column5";
             // 
             // FrmEcoleEdit
             // 

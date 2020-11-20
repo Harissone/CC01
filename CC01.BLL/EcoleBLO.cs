@@ -9,14 +9,14 @@ using System.IO;
 
 namespace CC01.BLL
 {
-    class EcoleBLO
+    public class EcoleBLO
     {
-        private EcoleBLO ecoleRepo;
+        private EcoleDAO ecoleRepo;
         private string dbFolder;
         public EcoleBLO(string dbFolder)
         {
             this.dbFolder = dbFolder;
-            ecoleRepo = new EcoleBLO(dbFolder);
+            ecoleRepo = new EcoleDAO(dbFolder);
         }
 
         public void CreateEcole(Ecole oldEcole, Ecole newEcole)
@@ -45,18 +45,13 @@ namespace CC01.BLL
             
         }
 
-        public Ecole GetEtudiant()
+        public Ecole GetEcole()
         {
             Ecole ecole = ecoleRepo.Get();
             if (ecole != null)
                 if (!string.IsNullOrEmpty(ecole.Logo))
                     ecole.Logo = Path.Combine(dbFolder, "logo", ecole.Logo);
             return ecole;
-        }
-
-        private Ecole Get()
-        {
-            
         }
     }
 

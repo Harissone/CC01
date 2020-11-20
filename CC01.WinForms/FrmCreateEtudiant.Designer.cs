@@ -31,18 +31,18 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.lblNom = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
             this.lblPrenom = new System.Windows.Forms.Label();
             this.txtDateNaissance = new System.Windows.Forms.TextBox();
             this.lblDateNaissance = new System.Windows.Forms.Label();
             this.txtLieuxNaissance = new System.Windows.Forms.TextBox();
             this.lblLieuxNaissance = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.txtIdentfiant = new System.Windows.Forms.TextBox();
+            this.txtIdentifiant = new System.Windows.Forms.TextBox();
             this.lblIdentifiant = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSexe = new System.Windows.Forms.TextBox();
             this.lblSexe = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblNom
             // 
@@ -73,12 +74,12 @@
             this.txtNom.Size = new System.Drawing.Size(177, 20);
             this.txtNom.TabIndex = 2;
             // 
-            // textBox2
+            // txtPrenom
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(177, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtPrenom.Location = new System.Drawing.Point(12, 118);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(177, 20);
+            this.txtPrenom.TabIndex = 4;
             // 
             // lblPrenom
             // 
@@ -123,19 +124,21 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(272, 335);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(177, 23);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // txtIdentfiant
+            // txtIdentifiant
             // 
-            this.txtIdentfiant.Location = new System.Drawing.Point(272, 56);
-            this.txtIdentfiant.Name = "txtIdentfiant";
-            this.txtIdentfiant.Size = new System.Drawing.Size(177, 20);
-            this.txtIdentfiant.TabIndex = 11;
+            this.txtIdentifiant.Location = new System.Drawing.Point(272, 56);
+            this.txtIdentifiant.Name = "txtIdentifiant";
+            this.txtIdentifiant.Size = new System.Drawing.Size(177, 20);
+            this.txtIdentifiant.TabIndex = 11;
             // 
             // lblIdentifiant
             // 
@@ -146,12 +149,12 @@
             this.lblIdentifiant.TabIndex = 10;
             this.lblIdentifiant.Text = "Identifiant";
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(272, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(177, 20);
-            this.textBox3.TabIndex = 13;
+            this.txtEmail.Location = new System.Drawing.Point(272, 118);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(177, 20);
+            this.txtEmail.TabIndex = 13;
             // 
             // lblEmail
             // 
@@ -162,13 +165,13 @@
             this.lblEmail.TabIndex = 12;
             this.lblEmail.Text = "Email";
             // 
-            // textBox1
+            // txtContact
             // 
-            this.textBox1.Location = new System.Drawing.Point(272, 182);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 20);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "`";
+            this.txtContact.Location = new System.Drawing.Point(272, 182);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(177, 20);
+            this.txtContact.TabIndex = 15;
+            this.txtContact.Text = "`";
             // 
             // label1
             // 
@@ -198,23 +201,25 @@
             // 
             // FrmCreateEtudiant
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(482, 450);
             this.Controls.Add(this.txtSexe);
             this.Controls.Add(this.lblSexe);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtContact);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtIdentfiant);
+            this.Controls.Add(this.txtIdentifiant);
             this.Controls.Add(this.lblIdentifiant);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtLieuxNaissance);
             this.Controls.Add(this.lblLieuxNaissance);
             this.Controls.Add(this.txtDateNaissance);
             this.Controls.Add(this.lblDateNaissance);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPrenom);
             this.Controls.Add(this.lblPrenom);
             this.Controls.Add(this.txtNom);
             this.Controls.Add(this.lblNom);
@@ -231,18 +236,18 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.TextBox txtNom;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPrenom;
         private System.Windows.Forms.Label lblPrenom;
         private System.Windows.Forms.TextBox txtDateNaissance;
         private System.Windows.Forms.Label lblDateNaissance;
         private System.Windows.Forms.TextBox txtLieuxNaissance;
         private System.Windows.Forms.Label lblLieuxNaissance;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox txtIdentfiant;
+        private System.Windows.Forms.TextBox txtIdentifiant;
         private System.Windows.Forms.Label lblIdentifiant;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSexe;
         private System.Windows.Forms.Label lblSexe;

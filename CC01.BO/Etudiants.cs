@@ -16,6 +16,7 @@ namespace CC01.BO
         public string Identifiant { get; set; }
         public string Contact { get; set; }
         public string Email { get; set; }
+        public string Sexe { get; set; }
 
         public Etudiants()//Pour serialisation
         {
@@ -23,7 +24,7 @@ namespace CC01.BO
         }
 
         public Etudiants(string nom, string prenom, string dateNaissance, string lieuxNaissance, string identifiant, 
-                string contact, string email)
+                string contact, string email, string sexe)
         {
             Nom = nom;
             Prenom = prenom;
@@ -32,6 +33,7 @@ namespace CC01.BO
             Identifiant = identifiant;
             Contact = contact;
             Email = email;
+            Sexe = sexe;
         }
 
         public override bool Equals(object obj)
@@ -42,9 +44,9 @@ namespace CC01.BO
 
         public override int GetHashCode()
         {
-            return 574969646 + EqualityComparer<string>.Default.GetHashCode(Identifiant);
+            return -574969646 + EqualityComparer<string>.Default.GetHashCode(Identifiant);
         }
 
-
+       
     }
 }

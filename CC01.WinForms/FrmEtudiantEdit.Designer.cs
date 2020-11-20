@@ -160,6 +160,7 @@
             this.btnImprimer.TabIndex = 2;
             this.btnImprimer.Text = "Imprimer";
             this.btnImprimer.UseVisualStyleBackColor = true;
+            this.btnImprimer.Click += new System.EventHandler(this.btnImprimer_Click);
             // 
             // btnRefresh
             // 
@@ -183,6 +184,7 @@
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSupprimer
             // 
@@ -195,6 +197,7 @@
             this.btnSupprimer.TabIndex = 6;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // lblRows
             // 

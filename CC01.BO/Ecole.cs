@@ -13,7 +13,6 @@ namespace CC01.BO
         public string BoitePostale { get; set; }
         public string Contact { get; set; }
         public string Email { get; set; }
-
         public string Logo { get; set; }
 
         public Ecole()
