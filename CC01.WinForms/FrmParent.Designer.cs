@@ -82,6 +82,7 @@
             this.etudiantsToolStripMenuItem1.Name = "etudiantsToolStripMenuItem1";
             this.etudiantsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.etudiantsToolStripMenuItem1.Text = "Etudiants";
+            this.etudiantsToolStripMenuItem1.Click += new System.EventHandler(this.etudiantsToolStripMenuItem1_Click);
             // 
             // ecolesToolStripMenuItem
             // 
@@ -89,6 +90,11 @@
             this.ecolesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ecolesToolStripMenuItem.Text = "Ecoles";
             this.ecolesToolStripMenuItem.Click += new System.EventHandler(this.ecolesToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // toolStripSeparator1
             // 
@@ -109,6 +115,12 @@
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
+            // 
+            // ecoleToolStripMenuItem
+            // 
+            this.ecoleToolStripMenuItem.Name = "ecoleToolStripMenuItem";
+            this.ecoleToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.ecoleToolStripMenuItem.Text = "Option";
             // 
             // ecoleToolStripMenuItem
             // 
